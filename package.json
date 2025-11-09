@@ -1,0 +1,21 @@
+{
+  "name": "verification-bot",
+  "version": "1.0.0",
+  "description": "Discord Verification Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "verification"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.0.3",
+    "mongoose": "^8.19.3"
+  }
+}
