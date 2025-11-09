@@ -196,7 +196,7 @@ client.on('interactionCreate', async (interaction) => {
                     await interaction.member.roles.add(verifiedRole);
                     
                     // Guardar verificación en base de datos
-                    db.addVerification(interaction.user.id, interaction.user.tag);
+                    await db.addVerification(interaction.user.id, interaction.user.tag);
                     
                     const successEmbed = new EmbedBuilder()
                         .setColor('#00D9A3')
@@ -243,3 +243,4 @@ process.on('unhandledRejection', error => {
 
 // Iniciar el bot
 client.login(process.env.DISCORD_TOKEN);
+
