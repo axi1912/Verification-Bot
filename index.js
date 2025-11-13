@@ -80,8 +80,8 @@ async function setupVerificationPanel(channel) {
                 inline: false
             }
         )
-        .setImage('https://cdn.discordapp.com/attachments/1309783318031503384/1436578775121920100/fau_get_2.gif')
-        .setFooter({ text: '🔒 Secure Verification System with OAuth2' })
+        .setImage('https://cdn.discordapp.com/attachments/1309783318031503384/1438385544043430030/banner_factory.gif')
+        .setFooter({ text: '🔒 Factory Boosts Verification System' })
         .setTimestamp();
 
     const row = new ActionRowBuilder()
@@ -101,7 +101,7 @@ async function setupHowToPanel(channel) {
         .setColor('#00D9A3')
         .setTitle('📋 HOW TO VERIFY')
         .setDescription('━━━━━━━━━━━━━━━━━━━━━━━━━')
-        .setThumbnail('https://cdn.discordapp.com/attachments/1309783318031503384/1436578775121920100/fau_get_2.gif')
+        .setImage('https://cdn.discordapp.com/attachments/1309783318031503384/1438385544043430030/banner_factory.gif')
         .addFields(
             {
                 name: '\n**Step 1️⃣ • Go to Verification Channel**',
