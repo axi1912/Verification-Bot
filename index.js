@@ -60,36 +60,25 @@ client.once('ready', async () => {
 // Función para crear el panel de verificación
 async function setupVerificationPanel(channel) {
     const embed = new EmbedBuilder()
-        .setColor('#00D9A3')
-        .setTitle('🔐 SERVER VERIFICATION')
-        .setDescription('Welcome to the server! Please verify yourself to gain access to all channels.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━')
-        .addFields(
-            {
-                name: '✨ Why Verify?',
-                value: 'Verification helps us keep the community safe from spam, bots, and unwanted users.',
-                inline: false
-            },
-            {
-                name: '🎯 What You Get',
-                value: '• Access to all server channels\n• Ability to chat and participate\n• Join our amazing community',
-                inline: false
-            },
-            {
-                name: '🔐 Security Check',
-                value: 'You\'ll need to authenticate with Discord OAuth2 on our secure website!',
-                inline: false
-            }
-        )
-        .setImage('https://cdn.discordapp.com/attachments/1309783318031503384/1438385544043430030/banner_factory.gif')
-        .setFooter({ text: '🔒 Factory Boosts Verification System' })
+        .setColor('#2b2d31')
+        .setTitle('Welcome to')
+        .setDescription('**factoryboosts.com**\n\n**Who are we?**\n> Welcome to Factory Boosts! Find premium services and products with guaranteed satisfaction.\n\n**What do we sell?**\n> We offer a wide range of products and services, and we are continuously expanding. Please visit our website to explore our services.\n\n**Welcome from us,**\n> We look forward to your joining us. If you have any concerns or issues, feel free to reach out to us on our support.')
+        .setImage('https://cdn.discordapp.com/attachments/1309783318031503384/1447959551239258313/FactoryBoosts.com.png?ex=693984ea&is=6938336a&hm=65c316751d66d20f7f953f246080d55b71d06281b1f3dd4932ae7bce59d4ac89&')
+        .setFooter({ text: 'Factory Boosts All Rights Reserved.' })
         .setTimestamp();
 
     const row = new ActionRowBuilder()
         .addComponents(
             new ButtonBuilder()
                 .setCustomId('verify_button')
-                .setLabel('🔐 Start Verification')
-                .setStyle(ButtonStyle.Primary)
+                .setLabel('Verify')
+                .setEmoji('✅')
+                .setStyle(ButtonStyle.Secondary),
+            new ButtonBuilder()
+                .setLabel('Website')
+                .setEmoji('🌐')
+                .setStyle(ButtonStyle.Link)
+                .setURL('https://factoryboosts.com')
         );
 
     await channel.send({ embeds: [embed], components: [row] });
