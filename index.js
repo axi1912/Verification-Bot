@@ -63,7 +63,7 @@ async function setupVerificationPanel(channel) {
         .setColor('#2b2d31')
         .setTitle('Welcome to')
         .setDescription('**factoryboosts.com**\n\n**Who are we?**\n> Welcome to Factory Boosts! Find premium services and products with guaranteed satisfaction.\n\n**What do we sell?**\n> We offer a wide range of products and services, and we are continuously expanding. Please visit our website to explore our services.\n\n**Welcome from us,**\n> We look forward to your joining us. If you have any concerns or issues, feel free to reach out to us on our support.')
-        .setImage('https://cdn.discordapp.com/attachments/1309783318031503384/1447959551239258313/FactoryBoosts.com.png?ex=693984ea&is=6938336a&hm=65c316751d66d20f7f953f246080d55b71d06281b1f3dd4932ae7bce59d4ac89&')
+        .setImage('https://cdn.discordapp.com/attachments/1309783318031503384/1447961215900057641/FactoryBoosts.com.png?ex=69398677&is=693834f7&hm=80da17829539cdb19a9a5dfb3a912bbc867266f055e01c1b38300ffd7d61480b&')
         .setFooter({ text: 'Factory Boosts All Rights Reserved.' })
         .setTimestamp();
 
