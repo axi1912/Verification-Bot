@@ -62,7 +62,7 @@ async function setupVerificationPanel(channel) {
     const embed = new EmbedBuilder()
         .setColor('#2b2d31')
         .setTitle('Welcome to')
-        .setDescription('**factoryboosts.com**\n\n**Who are we?**\n> Welcome to Factory Boosts! Find premium services and products with guaranteed satisfaction.\n\n**What do we sell?**\n> We offer a wide range of products and services, and we are continuously expanding. Please visit our website to explore our services.\n\n**Welcome from us,**\n> We look forward to your joining us. If you have any concerns or issues, feel free to reach out to us on our support.')
+        .setDescription('**factoryboosts.mysellauth.com**\n\n**Who are we?**\n> Welcome to Factory Boosts! Find premium services and products with guaranteed satisfaction.\n\n**What do we sell?**\n> We offer a wide range of products and services, and we are continuously expanding. Please visit our website to explore our services.\n\n**Welcome from us,**\n> We look forward to your joining us. If you have any concerns or issues, feel free to reach out to us on our support.')
         .setImage('https://cdn.discordapp.com/attachments/1309783318031503384/1447962061567951041/FactoryBoosts.com_960_x_540_px.png?ex=69398741&is=693835c1&hm=78db644923b0727d080db0eed6826a9616c00a0418edd68c1872cdf3af8b3491&')
         .setFooter({ text: 'Factory Boosts All Rights Reserved.' });
 
@@ -77,7 +77,7 @@ async function setupVerificationPanel(channel) {
                 .setLabel('Website')
                 .setEmoji('🌐')
                 .setStyle(ButtonStyle.Link)
-                .setURL('https://factoryboosts.com')
+                .setURL('https://factoryboosts.mysellauth.com/')
         );
 
     await channel.send({ embeds: [embed], components: [row] });
